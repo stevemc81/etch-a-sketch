@@ -5,7 +5,13 @@
 }
 
 .square {
-    /* border: 1px solid black; */
+    border: 1px solid lightgrey;
     width: 20px;
     height: 20px;
+    box-sizing: border-box;
+}
+
+.hovered {
+    background-color: teal;
+    border-color: teal;
 }
