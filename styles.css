@@ -8,6 +8,10 @@ body {
     align-items: center;
 }
 
+.options {
+    margin: 20px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
