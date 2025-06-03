@@ -2,15 +2,6 @@ const container = document.querySelector('.container');
 
 createGrid(16);
 
-// for (let i = 0; i < (16 * 16); i++) {
-//     const square = document.createElement('div');
-//     square.classList.add('square');
-//     square.addEventListener('mouseover', () => {
-//         square.classList.add('hovered');
-//     })
-//     container.appendChild(square);
-// }
-
 function getRandomRgbColor() {
     const r = Math.floor(Math.random() * 256); // 0-255
     const g = Math.floor(Math.random() * 256); // 0-255
@@ -28,7 +19,6 @@ function createGrid(gridSize) {
         square.style.height = `${320 / gridSize}px`;
         square.addEventListener('mouseover', () => {
             const randomColoursCheckbox = document.querySelector('#random-colours-checkbox');
-            console.log(randomColoursCheckbox);
             if (randomColoursCheckbox.checked) {
                 const color = getRandomRgbColor();
                 square.style.backgroundColor = color;
